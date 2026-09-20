@@ -1,6 +1,8 @@
 # Financial News Sentiment Classification Using Deep Learning
 
-A deep learning-based NLP project that classifies finance-related tweets and news text into **Bearish, Bullish, or Neutral** sentiment using RNN, LSTM, and GRU models. The **GRU model** is used for the Streamlit application.
+A deep learning-based NLP project that classifies finance-related tweets and financial text into **Bearish, Bullish, and Neutral** sentiment using RNN, LSTM, and GRU models.
+
+The **GRU model** was selected for deployment through a Streamlit application.
 
 ## 🔄 Project Pipeline
 
@@ -26,20 +28,22 @@ GRU Selected
 Streamlit Deployment
 ```
 
-📥 Download Trained Model Files
+## 📥 Trained Model Files
 
-Download the trained GRU model files from Google Drive:
+The trained GRU model and supporting files are available on Google Drive.
 
-Download Model Files – Google Drive
+[Download Model Files – Google Drive](https://drive.google.com/drive/folders/1rd7bhQi1sVMX-1bU3qI-jX4InZ3KwbQD?usp=sharing)
 
-Download these four files:
+Download the following four files:
 
+```text
 gru_model.pth
 word_to_index.pkl
 label_mapping.pkl
 gru_config.pkl
+```
 
-Place all four files in the same folder as app.py.
+Place all four files in the **same folder as `app.py`**.
 
 ### Project Structure
 
@@ -56,41 +60,27 @@ Financial-News-Sentiment-Prediction/
 
 ## 🚀 Run the Streamlit Application
 
-### 1. Clone the repository
+### 1. Clone the Repository
 
 ```bash
 git clone YOUR_GITHUB_REPOSITORY_URL
 cd Financial-News-Sentiment-Prediction
 ```
 
-### 2. Install dependencies
+### 2. Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 3. Run Streamlit
+### 3. Download Model Files
+
+Download the four trained model files from the Google Drive link above and place them in the same folder as `app.py`.
+
+### 4. Run Streamlit
 
 ```bash
 streamlit run app.py
 ```
 
-Open the URL displayed in the terminal, usually:
-
-```text
-http://localhost:8501
-```
-
-## 📊 Output
-
-Enter financial text and the application predicts:
-
-* 📈 Bullish
-* 📉 Bearish
-* ➖ Neutral
-
-The application also displays the prediction confidence and class probabilities.
-
-## 🛠️ Technologies
-
-**Python • PyTorch • NLTK • Scikit-learn • Streamlit • Google Colab**
+Open the local URL shown in the term
