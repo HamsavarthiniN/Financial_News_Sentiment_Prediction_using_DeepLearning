@@ -2,7 +2,7 @@
 
 A deep learning-based NLP project that classifies finance-related tweets and financial text into **Bearish, Bullish, and Neutral** sentiment using RNN, LSTM, and GRU models.
 
-The **GRU model** was selected for deployment through a Streamlit application.
+The **LSTM model** was selected for deployment through a Streamlit application.
 
 ## 🔄 Project Pipeline
 
@@ -23,24 +23,24 @@ RNN / LSTM / GRU
       ↓
 Model Evaluation
       ↓
-GRU Selected
+LSTM Selected
       ↓
 Streamlit Deployment
 ```
 
 ## 📥 Trained Model Files
 
-The trained GRU model and supporting files are available on Google Drive.
+The trained LSTM model and supporting files are available on Google Drive.
 
 [Download Model Files – Google Drive](https://drive.google.com/drive/folders/1rd7bhQi1sVMX-1bU3qI-jX4InZ3KwbQD?usp=sharing)
 
 Download the following four files:
 
 ```text
-gru_model.pth
+lstm_model.pth
 word_to_index.pkl
 label_mapping.pkl
-gru_config.pkl
+lstm_config.pkl
 ```
 
 Place all four files in the **same folder as `app.py`**.
@@ -51,10 +51,10 @@ Place all four files in the **same folder as `app.py`**.
 Financial-News-Sentiment-Prediction/
 │
 ├── app.py
-├── gru_model.pth
+├── lstm_model.pth
 ├── word_to_index.pkl
 ├── label_mapping.pkl
-├── gru_config.pkl
+├── lstm_config.pkl
 └── requirements.txt
 ```
 
